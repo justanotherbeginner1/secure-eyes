@@ -1,34 +1,50 @@
-SecureEyes - Security Dashboard
-SecureEyes is a modern, responsive security management interface designed for real-time monitoring and alert tracking. This prototype features a fully functional navigation system, theme persistence, and dynamic data simulation.
+# 🛡️ SecureEyes - Smart Security Dashboard
 
-🚀 Features
-Live Dashboard: Monitor camera feeds with status indicators and locations.
+**SecureEyes** is a modern, responsive security management interface designed for real-time monitoring and alert tracking. This project demonstrates a functional frontend prototype for a security system, featuring a multi-page layout, theme customization, and dynamic data simulation.
 
-Dynamic Alerts: A "Fake Log" system that simulates real-time security events.
+---
 
-Global Search: Instantly filter through cameras, settings, and logs.
+## 🚀 Key Features
 
-Dark Mode: Full theme support with persistence via localStorage.
+* **Real-time Monitoring Dashboard**: View active camera feeds with status indicators (Online/Offline) and location tracking.
+* **Dynamic Alert System**: Features an automated "Fake Log" generator that simulates live security events such as "Intrusion Detected" or "System Breach."
+* **Global Search**: Integrated search functionality to quickly filter through cameras, settings, or log entries in real-time.
+* **Dark Mode Support**: A full-featured dark/light theme toggle that persists across sessions using `localStorage`.
+* **Detailed Camera Views**: Interactive camera previews that transition to expanded, high-resolution views.
+* **Responsive Settings**: A dedicated configuration page for managing security alerts, cloud backups, and data retention.
 
-Demo Auth: A functional login system for testing the UI flow.
+---
 
-🛠️ Tech Stack
-HTML5 & CSS3 (Modular Stylesheets)
+## 🛠️ Technical Stack
 
-Vanilla JavaScript (ES6+)
+* **Frontend**: HTML5, CSS3 (Modular Design)
+* **Scripting**: Vanilla JavaScript (ES6+)
+* **Icons**: Lucide SVG components
+* **Storage**: Web Storage API (`localStorage`) for state persistence
 
-Lucide Icons (SVG-based)
+---
 
-🔑 Demo Access
-User: sagar@gmail.com
+## 🔑 Demo Credentials
 
-Pass: admin123
+To access the dashboard and test the authentication flow, use the following credentials on the login page:
 
-📁 Structure
-dashboard.html: Main monitoring overview.
+* **Email**: `sagar@gmail.com`
+* **Password**: `admin123`
 
-alert-logs.html: History of security events.
+---
 
-settings.html: System and notification preferences.
+## 📁 Project Structure
 
-js/: Custom scripts for theme toggling, search, and log generation.
+* **`login-page.html`**: Secure entry point with authentication logic.
+* **`dashboard.html`**: Main overview of all active security cameras.
+* **`alert-logs.html`**: History of security events with live updates.
+* **`settings.html`**: System configuration and user preferences.
+* **`js/`**: Directory containing logic for theme toggling, search, and logs.
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/justanotherbeginner1/secure-eyes.git](https://github.com/justanotherbeginner1/secure-eyes.git)oses.
