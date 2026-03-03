@@ -31,33 +31,56 @@ body{
     opacity: 0.2;
 }
 
-
 @media (max-width: 600px) {
     body {
         padding: 0;
-        margin: 0;  
-        background: #010104; 
+        margin: 0;
+        height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
 
     .login-container {
+      
         width: 100vw;
         height: 100dvh;
-        max-width: none;
-        margin: 0;     
-        padding: 40px 20px;
+        
+       
+        margin: 0;
         border: none;
         border-radius: 0;
         
-       
+     
         display: flex;
         flex-direction: column;
-       
         justify-content: center; 
+        align-items: stretch;    
+        
+        padding: 0 30px; 
+        box-sizing: border-box;
     }
 
     #web-logo {
-        margin: 0 auto 20px auto; 
-        display: block;
+        
+        align-self: center; 
+        margin-bottom: 40px; 
+        width: 60px;  
+        height: 60px;
+    }
+
+    .input-wrapper, 
+    #access-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #access-button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -291,6 +314,7 @@ body{
     font-family: arial;
     font-size: 10px;
 }
+
 
 
 
