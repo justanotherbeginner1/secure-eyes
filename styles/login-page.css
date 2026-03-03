@@ -36,6 +36,12 @@ body{
     .login-container{
         padding: 15px;
     }
+
+    
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
 }
 
 #web-logo{
@@ -268,4 +274,5 @@ body{
     font-family: arial;
     font-size: 10px;
 }
+
 
