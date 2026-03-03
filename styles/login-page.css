@@ -314,7 +314,10 @@ body{
     font-size: 10px;
 }
 
+.dark-mode .input-label{
+    color: rgb(86, 85, 85);
 
+}
 
 
 
