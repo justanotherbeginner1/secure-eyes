@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureEyes</title>
+    <link rel="stylesheet" href="styles/alert-logs.css">
+    <link rel="stylesheet" href="styles/header.css">
+    
+    <link rel="icon" type="image/png" href="images/web-logo.png?v">
+
+</head>
+
+<body>
+
+    <script>
+
+        const savedTheme = localStorage.getItem('theme');
+    
+        if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+            }
+    </script>
+
+
+        <!-- === Header === -->
+     <div class="header">
+
+        <div class="left-section">
+             <svg id="web-logo" xmlns="http://www.w3.org/2000/svg" width="24" 
+            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-shield-check w-8 h-8 text-white" 
+            data-fg-djkv9="1.43:1.6216:/src/app/components/LoginPage.tsx:38:13:1654:46:e:ShieldCheck::::::CqaD">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 
+            6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+
+            <h2 id="web-name">SecureEyes</h2>
+        </div>
+
+        <div class="middle-section">
+            <div class="search-icon" id="search-toggle">
+                
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="lucide lucide-search absolute left-3 top-1/2 
+              -translate-y-1/2 w-5 h-5 text-zinc-500" data-fg-d5jy10="1.20:1.3007:/src/app/components/
+              Header.tsx:18:11:804:85:e:Search::::::B9rK"><circle cx="11" cy="11" r="8"></circle><path
+               d="m21 21-4.3-4.3"></path></svg>
+               
+            </div>
+
+            <input type="text" id="mobile-search-input" placeholder="Search cameras, logs, or events...">
+        </div>
+         
+        
+
+        <div class="right-section">
+
+
+            <a href="alert-logs.html">
+                
+            <div class="notifications">
+
+            <svg id="notification-bell-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+            stroke-linejoin="round" class="lucide lucide-bell w-6 h-6 text-zinc-400 group-hover:
+            text-white transition-colors" data-fg-d5jy15="1.20:1.3007:/src/app/components/Header.
+            tsx:30:11:1529:83:e:Bell::::::CiHR"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path
+             d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0
+              0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path></svg>
+
+    
+
+            </div>
+
+            </a>
+
+            <div class="divider"></div>
+
+            <div class="profile"> 
+
+                <img id="user-profile-picture" src="images/user-profile-picture.png" alt="img">
+
+                <div>
+                 <p class="officer-name">Officer Pajeet</p>
+                 <p class="officer-role">Security Lead</p>
+                </div>
+
+                 <div 
+                 class="profile-more"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                 width="24" height="24" viewBox="0 0 24 24" 
+                 fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" 
+                  class="lucide lucide-chevron-down w-4 h-4 text-
+                  zinc-500 group-hover:text-white transition-colors"
+                   data-fg-d5jy26="1.20:1.3007:/src/app/components/H
+                   eader.tsx:48:11:2742:90:e:ChevronDown::::::Ddn3"><path d="m6 9 6 6 6-6"></path></svg></div>
+               
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- === Content table === -->
+
+    <div class="content-table">
+
+    <a href="dashboard.html" class="content-pages" id="dashboard-page">
+        <svg width="20" height="24" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         class="lucide lucide-layout-dashboard">
+            <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+            <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+            <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+            <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+        </svg>
+        <p class="content-page-text">Dashboard</p>
+    </a>
+
+
+    <a href="#" class="content-pages" id="alert-logs-page">
+        <svg width="20" height="24" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         class="lucide lucide-bell">
+            <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+            <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 
+            0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
+        </svg>
+        <p class="content-page-text">Alert Logs</p>
+    </a>
+
+
+    <a href="settings.html" class="content-pages" id="settings-page">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         class="lucide lucide-settings">
+            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 
+            2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 
+            1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 
+            0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1
+            1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+        <p class="content-page-text">Settings</p>
+    </a>
+
+
+    <div class="divider2"></div>
+
+    <a href="login-page.html" class="logout-system">
+        <svg width="20" height="24" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         class="lucide lucide-log-out">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" x2="9" y1="12" y2="12"></line>
+        </svg>
+        <p class="content-page-text" id="logout-system-text">Logout System</p>
+    </a>
+
+</div>
+
+    
+   <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+        <div class="header-container">
+        <div class="page-info">
+            <h1 class="page-title">Security Alert Logs</h1>
+            <p id="intro-text">Complete audit trail of system alerts and activity.</p>
+        </div>
+        
+        <div class="header-actions">
+            <button class="action-btn trigger-alert-btn" onclick="addFakeLog()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/><path d="m9.01 19 1.74-7.03"/><path d="m14.99 19-1.74-7.03"/></svg>
+                Trigger Mock Alert
+            </button>
+            
+            <button class="action-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg> Filter
+            </button>
+
+            <div class="search-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text"  id="alert-search"  placeholder="Search Logs...">
+            </div>
+        </div>
+    </div>
+
+    <div class="logs-card">
+        <table class="logs-table">
+            <thead>
+                <tr>
+                    <th>LOG ID</th>
+                    <th>EVENT TYPE</th>
+                    <th>LOCATION</th>
+                    <th>TIMESTAMP</th>
+                    <th>STATUS</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="logBody">
+                <tr>
+                    <td>ALT-2931</td>
+                    <td class="event-name">Intrusion Detected</td>
+                    <td>Main Entrance Hall</td>
+                    <td>Oct 24, 2023 • 10:42:15 AM</td>
+                    <td><span class="badge badge-critical">Critical</span></td>
+                    <td><button class="details-link">Details</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="js/fakeLog.js"></script>
+<script src="js/search-toggle.js"></script>
+<script src="js/theme-toggle.js"></script>
+
+</body>
+</html>
