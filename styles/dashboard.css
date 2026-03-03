@@ -237,6 +237,13 @@ body{
 }
 
 @media(max-width:600px){
+    .main-content{
+        margin-bottom: 80px;
+    }
+}
+
+
+@media(max-width:600px){
 
     .main-content{
         margin-top: 90px;
@@ -794,5 +801,6 @@ body{
 .dark-mode .middle-section input {
    color:rgb(69, 68, 68);
 }
+
 
 
