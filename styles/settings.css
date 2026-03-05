@@ -658,3 +658,32 @@ body{
    color:rgb(69, 68, 68);
 }
 
+.logout-system-mobile{
+    display: none;
+}
+
+@media(max-width:600px){
+   
+    .cancel-save-changes{
+        display: flex;
+    }
+
+    .logout-system-mobile{
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+
+        color: rgb(247, 30, 30);
+        gap: 2px;
+        background-color: rgb(70, 27, 27);
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .dark-mode .logout-system-mobile{
+        color: white;
+        background-color: rgb(212, 54, 54);
+    }
+}
+
