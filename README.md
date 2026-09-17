@@ -24,13 +24,14 @@
 
 ---
 
-## 🔑 Demo Credentials
+🔗 **Live Demo:** 
 
-To access the dashboard and test the authentication flow, use the following credentials on the login page:
+**Live Link/:**
+https://justanotherbeginner1.github.io/secure-eyes/index.html
 
-* **Email**: `sagar@gmail.com`
-* **Password**: `admin123`
-
+**Demo credentials:**
+- Email: `sagar@gmail.com`
+- Password: `admin123`
 ---
 
 ## 📁 Project Structure
